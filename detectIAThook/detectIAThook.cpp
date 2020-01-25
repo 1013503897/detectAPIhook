@@ -225,14 +225,14 @@ void CheckIAT(DWORD ProcessID)
                     }
                     if (FunVA == pIat->u1.Function)
                     {
-                        // printf("%s��ת��\r\n", pTempFuction);
+                        // printf("%s:forward\r\n", pTempFuction);
                     }
                     else
                     {
                         char* pFunnameVA1 = (char*)(pInt->u1.AddressOfData + (DWORD)hModule);
                         char* pFunname1 = new char[MAX_PATH];
                         ReadProcessMemory(hProcess, (LPVOID)pFunnameVA1, pFunname1, MAX_PATH, &dwReadModuleSize);
-                        printf("%s!%s��Hook\r\n", pDllname, PIMAGE_IMPORT_BY_NAME(pFunname1)->Name);
+                        printf("%s!%sis hooked\r\n", pDllname, PIMAGE_IMPORT_BY_NAME(pFunname1)->Name);
                         delete[]pFunname1;
                     }
                 }
@@ -242,7 +242,7 @@ void CheckIAT(DWORD ProcessID)
         }
         pImport++;
     }
-    printf("�������\r\n");
+    printf("over\r\n");
 }
 
 int _tmain(int argc, _TCHAR* argv[])
