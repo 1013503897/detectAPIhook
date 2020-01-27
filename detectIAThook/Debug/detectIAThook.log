@@ -1,8 +1,0 @@
-﻿  detectIAThook.cpp
-D:\source\detectIAThook\detectIAThook\detectIAThook.cpp(58,23): warning C4018: “<”: 有符号/无符号不匹配
-D:\source\detectIAThook\detectIAThook\detectIAThook.cpp(85,35): warning C4244: “=”: 从“unsigned long”转换到“WORD”，可能丢失数据
-D:\source\detectIAThook\detectIAThook\detectIAThook.cpp(91,27): warning C4018: “<”: 有符号/无符号不匹配
-D:\source\detectIAThook\detectIAThook\detectIAThook.cpp(109,23): warning C4018: “<”: 有符号/无符号不匹配
-D:\source\detectIAThook\detectIAThook\detectIAThook.cpp(235,32): warning C4566: 由通用字符名称“\uFFFD”表示的字符不能在当前代码页(936)中表示出来
-D:\source\detectIAThook\detectIAThook\detectIAThook.cpp(245,12): warning C4566: 由通用字符名称“\uFFFD”表示的字符不能在当前代码页(936)中表示出来
-  detectIAThook.vcxproj -> D:\source\detectIAThook\Debug\detectIAThook.exe
